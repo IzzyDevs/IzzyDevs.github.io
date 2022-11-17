@@ -1,9 +1,175 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <title>Izzy Devs Portfolio</title>
+</head>
+
+<!--HEADER-->
+<header class="header">
+    <div id= "logo" class="logo">
+        <a href="#"><img src="./assets/logo.svg"></a>
+    </div>
+
+    <div class="navigation">
+        <input id="toggleMenu" type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+        <ul class="menu">
+            <li class="menuItem"><a id="selectionOne" href="#about">About Me</a></li>
+            <li class="menuItem"><a id="selectionTwo" href="#projects">Projects</a></li>
+            <li class="menuItem"><a id="selectionThree" href="#skills">Skills</a></li>
+            <li class="menuItem"><a id="selectionFour" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+</header>
+
+<!--BODY-->
 <body>
-  <h1>This is happening</h1>
-  <p>bit by bit!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <!--ABOUT-->
+    <section id="about">
+        <div id="about-container" class="container">
+            <div id="banner-image">
+                <img src="./assets/banner-image.png">
+            </div>
+            <div id="banner-intro">
+                <h1>I'm a designer & full stack developer that builds beautiful websites. </h1>
+                <a href="#contact"><button>Get in touch</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div id="projectsMaster" class="container">
+        <h2>Projects</h2>
+        <div id="projectContainer" class="projectContainer">
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <div class="projectCard">
+                <h3>Project Title</h3>
+                <p>Basic description of the project and it's function.</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div id="skillsMaster" class="container">
+            <h2>Skills</h2>
+            <div id="skillListContainer" class="container">
+                <h3>Web Development</h3>
+                    <ul>
+                        <li><img src="./assets/logo-html5.svg"><span>HTML</span></li>
+                        <li><img src="./assets/logo-css3.svg"><span>CSS</span></li>
+                        <li><img src="./assets/logo-javascript.svg"><span>Javascript</span></li>
+                        <li><img src="./assets/logo-github.svg"><span>Github</span></li>
+                        <li><img src="./assets/logo-react.svg"><span>React</span></li>
+                        <li><img src="./assets/logo-redux.svg"><span>Redux</span></li>
+                    </ul>
+                <h3>Web Development</h3>
+                    <ul>
+                        <li><img src="./assets/logo-figma.svg"><span>Figma</span></li>
+                        <li><img src="./assets/logo-xd.svg"><span>Adobe XD</span></li>
+                        <li><img src="./assets/logo-photoshop.svg"><span>Photoshop</span></li>
+                        <li><img src="./assets/logo-illustrator.svg"><span>Illustrator</span></li>
+                        <li><img src="./assets/logo-blender.svg"><span>Blender</span></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <div class="container">
+        <form action="" class="form" method="GET">
+            <label for="name" class="inputLabel">Contact Name</label>
+            <input name="name" id="name" type="text" class="textInput">
+            
+            <label for="projectTitle" class="inputLabel">Project Title</label>
+            <input name="projectTitle" id="projectTitle" type="text" class="textInput">
+            
+            <label for="budget" class="inputLabel">Budget Size</label>
+            <select name="budget" id="budget" class="textInput">
+                <option value="" disabled selected>Select your option</option>
+                <option value="big">Big</option>
+                <option value="medium">Medium</option>
+                <option value="small">Small</option>
+            </select>
+
+            <label for="message" class="inputLabel">Notes</label>
+            <textarea type="text" class="textInput" rows="5"></textarea>
+        
+            <input id="submit" name="submit" type="submit" value="submit" class="submit">
+        </form>
+        </div>
+    </section>
+<!--FOOTER-->
+<footer>
+    <section id="footer">
+        <p>I learnt a lot just making this work. Like how using 'inherit' for a global CSS display value is a bad idea</p>
+    </section>
+</footer>
+<script src="./assets/index.js"></script>
 </body>
- <footer></footer>
 </html>
